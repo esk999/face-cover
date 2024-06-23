@@ -54,10 +54,11 @@ def place_emoji_on_face(image, emoji_path):
     return image
 
 if uploaded_file is not None:
-    image = Image.open(uploaded_file)
-    try:
-        emoji_path = emoji_options[selected_emoji]
-        image_with_emoji = place_emoji_on_face(image, emoji_path)
-        st.image(image_with_emoji, caption='実行結果', use_column_width=True)
-    except Exception as e:
-        st.error(f"Error processing image: {e}")
+     if st.button('顔に絵文字を配置'):
+        image = Image.open(uploaded_file)
+        try:
+            emoji_path = emoji_options[selected_emoji]
+            image_with_emoji = place_emoji_on_face(image, emoji_path)
+            st.image(image_with_emoji, caption='実行結果', use_column_width=True)
+        except Exception as e:
+            st.error(f"Error processing image: {e}")
