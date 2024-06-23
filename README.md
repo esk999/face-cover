@@ -1,3 +1,17 @@
-streamlit　1.29.0
-実行方法
-$ streamlit run app.py
+# 顔を絵文字で隠せるアプリ
+
+このアプリはStreamlitを使用して作成されたもので、ユーザーがアップロードした画像の顔を絵文字で隠すことができます。
+
+## 必要条件
+
+このアプリをローカルで実行する前に、以下のライブラリがインストールされていることを確認してください。
+
+- Streamlit = 1.29.0
+- dlib
+- OpenCV
+- NumPy
+- Pillow
+
+## 実行方法
+```bash
+streamlit run app.py
