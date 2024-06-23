@@ -21,7 +21,7 @@ st.title('顔を絵文字で隠せるアプリ')
 
 
 # ドロップダウンメニューで絵文字を選択
-selected_emoji = st.selectbox("Choose an emoji to place:", list(emoji_options.keys()))
+selected_emoji = st.selectbox("顔文字を選択してください:", list(emoji_options.keys()))
 
 
 # ファイルアップローダー
